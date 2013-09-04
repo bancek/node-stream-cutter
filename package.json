@@ -1,0 +1,31 @@
+{
+  "name": "stream-cutter",
+  "description": "Stream cutter/slicer for Node.JS v0.10 streams",
+  "version": "0.1.0",
+  "author": "Luka Zakrajsek <luka@koofr.net>",
+  "keywords": [
+    "stream",
+    "streams",
+    "cut",
+    "cutter",
+    "slice",
+    "slicer",
+    "split"
+  ],
+  "homepage": "https://github.com/bancek/node-stream-cutter",
+  "bugs": "https://github.com/bancek/node-stream-cutter/issues",
+  "repository": "git://github.com/bancek/node-stream-cutter",
+  "license": "MIT",
+  "main": "lib/index.js",
+  "devDependencies": {
+    "coffee-script": "~1.6.3",
+    "mocha": "~1.12.1",
+    "chai": "~1.7.2",
+    "rimraf": "~2.2.2",
+    "request": "~2.27.0"
+  },
+  "scripts": {
+    "prepublish": "coffee --compile --output lib/ src/",
+    "test": "mocha --compilers coffee:coffee-script --timeout 60000"
+  }
+}
